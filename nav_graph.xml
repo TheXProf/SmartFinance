@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.smartfinance.ui.home.HomeFragment"
+        android:label="Ana Sayfa">
+        <action
+            android:id="@+id/action_home_to_addTransaction"
+            app:destination="@id/addTransactionFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_statistics"
+        android:name="com.tobrosgame.smartfinance.ui.statistics.StatisticsFragment"
+        android:label="İstatistikler" />
+
+    <fragment
+        android:id="@+id/navigation_budget"
+        android:name="com.tobrosgame.smartfinance.ui.budget.BudgetFragment"
+        android:label="Bütçe">
+        <action
+            android:id="@+id/action_budget_to_addBudget"
+            app:destination="@id/addBudgetFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="com.tobrosgame.smartfinance.ui.settings.SettingsFragment"
+        android:label="Ayarlar" />
+
+    <fragment
+        android:id="@+id/addTransactionFragment"
+        android:name="com.tobrosgame.smartfinance.ui.transaction.AddTransactionFragment"
+        android:label="İşlem Ekle" />
+
+    <fragment
+        android:id="@+id/addBudgetFragment"
+        android:name="com.tobrosgame.smartfinance.ui.budget.AddBudgetFragment"
+        android:label="Bütçe Ekle" />
+
+</navigation>

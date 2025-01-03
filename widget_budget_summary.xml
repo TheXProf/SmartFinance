@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/spacing_normal"
+    android:background="@drawable/widget_background">
+
+    <!-- Widget Başlığı -->
+    <TextView
+        android:id="@+id/widgetTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="Bütçe Durumu"
+        android:textColor="@color/text_primary"
+        android:textSize="@dimen/text_title"
+        android:textStyle="bold" />
+
+    <!-- Toplam Bütçe -->
+    <TextView
+        android:id="@+id/totalBudgetLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/widgetTitle"
+        android:layout_marginTop="@dimen/spacing_normal"
+        android:text="Toplam Bütçe:"
+        android:textColor="@color/text_secondary"
+        android:textSize="@dimen/text_caption" />
+
+    <TextView
+        android:id="@+id/totalBudgetAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/totalBudgetLabel"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/text_primary"
+        android:textSize="@dimen/text_body"
+        tools:text="₺5,000" />
+
+    <!-- İlerleme Çubuğu -->
+    <ProgressBar
+        android:id="@+id/budgetProgress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_below="@id/totalBudgetLabel"
+        android:layout_marginVertical="@dimen/spacing_small"
+        android:progressTint="@color/primary_variant" />
+
+    <!-- Kalan Tutar -->
+    <TextView
+        android:id="@+id/remainingLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/budgetProgress"
+        android:text="Kalan:"
+        android:textColor="@color/text_secondary"
+        android:textSize="@dimen/text_caption" />
+
+    <TextView
+        android:id="@+id/remainingAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/remainingLabel"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/income_green"
+        android:textSize="@dimen/text_body"
+        tools:text="₺2,500" />
+
+    <!-- Alt Çizgi -->
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/remainingLabel"
+        android:layout_marginVertical="@dimen/spacing_small"
+        android:background="@color/text_secondary"
+        android:alpha="0.2" />
+
+    <!-- Son Güncelleme -->
+    <TextView
+        android:id="@+id/lastUpdateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider"
+        android:textColor="@color/text_secondary"
+        android:textSize="@dimen/text_caption"
+        tools:text="Son güncelleme: 5 dk önce" />
+
+</RelativeLayout>

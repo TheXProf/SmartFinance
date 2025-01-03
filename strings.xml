@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">SmartFinance</string>
+
+    <!-- Ana menü metinleri -->
+    <string name="menu_home">Ana Sayfa</string>
+    <string name="menu_statistics">İstatistikler</string>
+    <string name="menu_budget">Bütçe</string>
+    <string name="menu_settings">Ayarlar</string>
+
+    <!-- Ana sayfa metinleri -->
+    <string name="total_balance">Toplam Bakiye</string>
+    <string name="total_income">Toplam Gelir</string>
+    <string name="total_expense">Toplam Gider</string>
+    <string name="recent_transactions">Son İşlemler</string>
+    <string name="see_all">Tümünü Gör</string>
+    <string name="add_transaction">İşlem Ekle</string>
+
+    <!-- İşlem ekleme ekranı -->
+    <string name="title_add_transaction">Yeni İşlem</string>
+    <string name="transaction_type">İşlem Tipi</string>
+    <string name="income">Gelir</string>
+    <string name="expense">Gider</string>
+    <string name="amount">Tutar</string>
+    <string name="category">Kategori</string>
+    <string name="date">Tarih</string>
+    <string name="description">Açıklama</string>
+    <string name="save">Kaydet</string>
+    <string name="cancel">İptal</string>
+
+    <!-- Bütçe ekranı -->
+    <string name="monthly_budget">Aylık Bütçe</string>
+    <string name="budget_remaining">Kalan Bütçe</string>
+    <string name="budget_spent">Harcanan</string>
+    <string name="add_budget">Bütçe Ekle</string>
+
+    <!-- Hata ve bildirim mesajları -->
+    <string name="error_invalid_amount">Geçerli bir tutar giriniz</string>
+    <string name="error_category_required">Kategori seçimi zorunludur</string>
+    <string name="success_transaction_added">İşlem başarıyla eklendi</string>
+    <string name="success_budget_created">Bütçe başarıyla oluşturuldu</string>
+    <string name="warning_budget_limit">Bütçe limitine yaklaşıyorsunuz!</string>
+</resources>
